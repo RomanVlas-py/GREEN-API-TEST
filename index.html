@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GREEN-API Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="panel form-panel">
+      <div class="field-group top-fields">
+        <label for="idInstance">idInstance</label>
+        <input id="idInstance" type="text" placeholder="Введите idInstance" />
+
+        <label for="apiTokenInstance">ApiTokenInstance</label>
+        <input id="apiTokenInstance" type="text" placeholder="Введите ApiTokenInstance" />
+      </div>
+
+      <div class="button-list">
+        <button id="getSettingsBtn" type="button">getSettings</button>
+        <button id="getStateBtn" type="button">getStateInstance</button>
+      </div>
+
+      <div class="field-group message-fields">
+        <label for="chatIdMessage">Номер получателя</label>
+        <input id="chatIdMessage" type="text" placeholder="Например 79001234567@c.us" />
+
+        <label for="messageText">Текст сообщения</label>
+        <textarea id="messageText" rows="4" placeholder="Введите текст сообщения"></textarea>
+
+        <button id="sendMessageBtn" type="button">sendMessage</button>
+      </div>
+
+      <div class="field-group file-fields">
+        <label for="chatIdFile">Номер получателя</label>
+        <input id="chatIdFile" type="text" placeholder="Например 79001234567@c.us" />
+
+        <label for="fileUrl">URL файла</label>
+        <input id="fileUrl" type="url" placeholder="https://example.com/file.pdf" />
+
+        <button id="sendFileBtn" type="button">sendFileByUrl</button>
+      </div>
+    </section>
+
+    <section class="panel response-panel">
+      <label for="responseField">Ответ</label>
+      <textarea id="responseField" rows="28" readonly placeholder="Здесь будет ответ метода"></textarea>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
